@@ -1,0 +1,127 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+/* check */
+.bg-check {
+    background-color: gray;
+}
+
+/* common */
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.fix {
+    position: fixed;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* layout */
+.d2ul {
+    top: 100%;
+    min-width: 110px;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    /* hover가 적용안되는 순간도 트렌지션 적용하기위해서 */
+    transition: 0.5s;
+    z-index: 100;
+    background-color: #999;
+}
+
+.d2ul {
+    width: 100%;
+}
+
+
+.d1li:hover>a {
+    color: red;
+}
+
+.d1a {
+    line-height: 100px;
+    font-size: 1rem;
+    padding: 0 5rem;
+}
+
+
+.d1li:hover .d2ul,
+#gnb:hover:after {
+    max-height: 180px;
+}
+
+#gnb:after {
+    height: 0;
+}
+
+.d2ul li:hover a {
+    background-color: #666;
+    color: yellow;
+}
+
+.d2ul li>a {
+    display: block;
+    padding: 0.5rem;
+}
